@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffdf8">
+  <title>Listings — Your local marketplace</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#browse" aria-label="Listings home">listings<span></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#browse">Explore</a><a href="#saved">Saved</a><a href="#meetups">Meetups</a>
+      </nav>
+      <div class="header-actions">
+        <button class="button ghost" id="account">Sign in</button>
+        <button class="button dark sell" data-action="sell">＋ Post listing</button>
+      </div>
+    </div>
+  </header>
+  <main class="shell" id="main"></main>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Main navigation"></nav>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <output id="toast" aria-live="polite"></output>
+</body>
+</html>
