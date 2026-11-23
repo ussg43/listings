@@ -18,17 +18,17 @@ const labels = {
   good: 'Good', fair: 'Fair', poor: 'Poor', available: 'Available', pending: 'Pending', sold: 'Sold',
 };
 const samples = [
-  ['Retro Runner Sneakers', 120, 'sale', 'great', 'Library lobby', 'Cream and black runners, US 10. Worn twice and includes the original box and spare laces.'],
-  ['Workwear Chore Coat', 85, 'sale', 'good', 'Corner café', 'Rust canvas chore coat with three front pockets. Size medium.'],
-  ['Compact Digital Camera', 65, 'sale', 'good', 'Transit hub', 'Pocket-sized point-and-shoot camera with a battery, charger and SD card.'],
-  ['Canvas Daypack', 0, 'trade', 'great', 'Community center', 'Forest green canvas daypack with a padded laptop sleeve. Open to trading for a small duffel.'],
-  ['Mushroom Table Lamp', 35, 'sale', 'great', 'Library lobby', 'Warm orange table lamp in working condition. A bulb is included.'],
-  ['Steel Field Watch', 0, 'giveaway', 'fair', 'Corner café', 'Stainless steel field watch with a black dial. It needs a fresh battery.'],
+  ['Retro Runner Sneakers', 120, 'sale', 'great', 'Cook Library', 'Cream and black runners, US 10. Worn twice and includes the original box and spare laces.'],
+  ['Workwear Chore Coat', 85, 'sale', 'good', 'Union', 'Rust canvas chore coat with three front pockets. Size medium.'],
+  ['Compact Digital Camera', 65, 'sale', 'good', 'West Village Commons', 'Pocket-sized point-and-shoot camera with a battery, charger and SD card.'],
+  ['Canvas Daypack', 0, 'trade', 'great', 'Glen Dining Hall', 'Forest green canvas daypack with a padded laptop sleeve. Open to trading for a small duffel.'],
+  ['Mushroom Table Lamp', 35, 'sale', 'great', 'Cook Library', 'Warm orange table lamp in working condition. A bulb is included.'],
+  ['Steel Field Watch', 0, 'giveaway', 'fair', 'Union', 'Stainless steel field watch with a black dial. It needs a fresh battery.'],
 ].map(([title, price, type, condition, spot, description], index) => ({
   id: `sample-${index + 1}`, title, price, type, condition, spot, description,
   status: 'available', photos: [`/assets/item-${index + 1}.jpg`],
 }));
-const spots = ['Library lobby', 'Corner café', 'Transit hub', 'Community center'];
+const spots = ['Union', 'West Village Commons', 'Cook Library', 'Glen Dining Hall'];
 const demo = new URLSearchParams(location.search).get('demo') === '1';
 const main = document.querySelector('#main');
 const dialog = document.querySelector('#dialog');
